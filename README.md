@@ -1,4 +1,4 @@
-#MasoniVerse: A Journey to Simplify Campus Life
+##MasoniVerse: A Journey to Simplify Campus Life
 
 ## Inspiration
 As George Mason students ourselves, we often struggled with the disjointed nature of accessing university resources and services spread across various websites and platforms. From official University websites such as PatriotWeb to third-party websites such as Piazza, we found that students found having to log in to and bookmark countless websites on their browsers just to do their assignments, hampering overall productivity. This inconvenience sparked the idea for MasoniVerse – a centralized hub to streamline and simplify the online experience for our fellow GMU students.
