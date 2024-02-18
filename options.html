@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Option List with Checkboxes</title>
+    <script>
+        function redirectToSuccess() {
+            // Check if at least one checkbox is checked
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checked = false;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    checked = true;
+                }
+            });
+
+            // Redirect if at least one checkbox is checked
+            if (checked) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Please select at least one option.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Select your options:</h2>
+    <form>
+        <label><input type="checkbox" name="option1" value="Option 1"> Option 1</label><br>
+        <label><input type="checkbox" name="option2" value="Option 2"> Option 2</label><br>
+        <label><input type="checkbox" name="option3" value="Option 3"> Option 3</label><br>
+        <!-- Add more options as needed -->
+        <button type="button" onclick="redirectToSuccess()">Submit</button>
+    </form>
+</body>
+</html>
