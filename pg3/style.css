@@ -1,0 +1,155 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:700,600,italic");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper .div {
+  background-color: #ffffff;
+  width: 1728px;
+  height: 1117px;
+  position: relative;
+}
+
+.wrapper .header {
+  position: absolute;
+  width: 1728px;
+  height: 202px;
+  top: 0;
+  left: 0;
+  background-color: #006633;
+}
+
+.wrapper .GMU-plogo-KO-gold {
+  position: absolute;
+  width: 254px;
+  height: 165px;
+  top: 19px;
+  left: 28px;
+  object-fit: cover;
+}
+
+.wrapper .back-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 51px;
+  left: 1605px;
+}
+
+.wrapper .submit {
+  position: absolute;
+  width: 404px;
+  height: 103px;
+  top: 940px;
+  left: 663px;
+}
+
+.wrapper .button {
+  position: relative;
+  width: 410px;
+  height: 111px;
+  left: -4px;
+  background-image: url(./img/rectangle-1.png);
+  background-size: 100% 100%;
+}
+
+.wrapper .welcome {
+  position: absolute;
+  width: 107px;
+  top: 35px;
+  left: 151px;
+  font-family: "Public Sans", Helvetica;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.wrapper .bottom-row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 275px;
+  position: absolute;
+  top: 624px;
+  left: 128px;
+}
+
+.wrapper .box {
+  position: relative;
+  width: 165px;
+  height: 241px;
+}
+
+.wrapper .overlap-group-2 {
+  position: absolute;
+  width: 171px;
+  height: 191px;
+  top: 0;
+  left: -4px;
+}
+
+.wrapper .icon {
+  position: absolute;
+  width: 171px;
+  height: 171px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.wrapper .text-wrapper {
+  position: absolute;
+  width: 163px;
+  top: 163px;
+  left: 4px;
+  font-family: "Public Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.wrapper .check-box-outline {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 191px;
+  left: 57px;
+}
+
+.wrapper   .top-row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 275px;
+  position: absolute;
+  top: 328px;
+  left: 128px;
+}

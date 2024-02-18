@@ -1,0 +1,144 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:600");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background: #ffffff;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper .div {
+  background-color: #ffffff;
+  width: 1728px;
+  height: 1117px;
+  position: relative;
+}
+
+.wrapper .header {
+  position: absolute;
+  width: 1728px;
+  height: 202px;
+  top: 0;
+  left: 0;
+  background-color: #006633;
+}
+
+.wrapper .GMU-plogo-KO-gold {
+  position: absolute;
+  width: 254px;
+  height: 165px;
+  top: 19px;
+  left: 28px;
+  object-fit: cover;
+}
+
+.wrapper .container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 275px;
+  position: absolute;
+  top: 330px;
+  left: 126px;
+}
+
+.wrapper .box-wrapper {
+  position: relative;
+  width: 165px;
+  height: 191px;
+}
+
+.wrapper .box {
+  position: relative;
+  width: 171px;
+  height: 191px;
+  left: -4px;
+}
+
+.wrapper .icon {
+  position: absolute;
+  width: 171px;
+  height: 171px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.wrapper .text-wrapper {
+  position: absolute;
+  width: 163px;
+  top: 163px;
+  left: 4px;
+  font-family: "Public Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.btn{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 8px, 15px;
+  background: #333;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover{
+  letter-spacing: 1px;
+}
+
+.btn:hover{
+  transform: scale(1.03);
+  box-shadow: 0, 5px 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .add-new-button {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  top: 920px;
+  left: 1508px;
+  background-color: #ac1d37;
+  border-radius: 74px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/add.png);
+  background-size: 100% 100%;
+}
+
+.wrapper .add-new-button:hover{
+  transform: scale(1.15);
+  box-shadow: 0, 5px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width:770px){
+  .wrapper{
+    padding:20px
+  }
+}
