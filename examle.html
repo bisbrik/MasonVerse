@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>
-            MasonVerse
-        </title>
-        <style>
-            .login{
-            
-                font-family: Arial;
-                font-size: 40px;
-                width: 194px; 
-                height: 28px; 
-                top: 523px;
-                left: 76px; 
-                border: 1px; 
-                text-align: 
-                center; color: #012622; 
-                font-size: 65px; 
-                font-family: Roboto; 
-                font-weight: 400; 
-                line-height: 28px; 
-                word-wrap: break-word;
-              } 
-        </style>
-           
+<head> 
+    <title>MasonVerse</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
+        .container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+          
+        }
+
+        .logo {
+            width: 430px;
+            display: flex;
+            top: 23px;
+            left:180px;
+           
+            margin-bottom: 20px;
+            
+        }
+
+        .form-container {
+            width: 350px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+
+            
+        }
+        .form-container input[type="submit"] {
+            margin-top: 20px;
+            width: 107%;
+            background-color: rgb(212, 55, 55);
+            
+        }
+
+        .right-half {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-half img {
+            width: 100%;
+            
+        }
+        .login{
+            width: 194px; 
+            left: 76px;
+            height: 28px; 
+            top: 523px; 
+            margin-top : 10px;
+            margin-right: 200px;
+            color: #012622; 
+            font-size: 55px; 
+            font-family: Roboto; 
+            font-weight: bold; 
+            line-height: 10px; 
+            word-wrap: break-word;
+        }
         
-    </head>
-    <body>
-        <form action="https://www.youtube.com/" method="post">
-            <img style="width: 500px; height: 500px; flex-shrink: 0; top:23px; left:180px" src="image\masonlogo.png" >
+        .forget{
+            margin-left: 260px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.687);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-half">
+            <img class="logo" src="image/masonlogo.png">
             <p class="login">
                 login
-
             </p>
-            
-            <img style="width: 827px; height: 1117px; left: 901px; flex-shrink: 0;" src="image\image.png">
-       
-        
+            <div class="form-container">
+                <form action="https://www.youtube.com/" method="post">
+                    <input type="text" placeholder="NetID" id="NetID" name="NetID" required>
+                
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                    <a class= "forget" href="https://password.gmu.edu/">Forgot Password?</a>
 
-            <div>
-        
-                <input type="text" placeholder="NetID"    id="NetID" name="NetID" required>
-            </div>
-            <div>
-               
-                <input type="password" placeholder="password" id="password" name="password" required>
-            </div>
-            <div>
-                <input type="submit" value="Submit">
+                    <input type="submit" value="Welcome">
+                </form>
                 
             </div>
-           <a href="https://password.gmu.edu/">forget password</a>
-        <div style="left: 587px; top: 842px; width: 167px; height: 28px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.75); font-size: 20px; font-family: Public Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Forgot Password?</div>
-        
-
-    </form>
-    </body>
+        </div>
+        <div class="right-half">
+            <img src="image/image.png">
+        </div>
+    </div>
+</body>
 </html>
